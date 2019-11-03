@@ -1,5 +1,5 @@
 siteConfig:
-  title: Saber Portfolio Starter
+  title: Andrea's Land
 
 permalinks:
   post: /posts/:slug

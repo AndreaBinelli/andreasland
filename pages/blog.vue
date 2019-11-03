@@ -7,7 +7,7 @@
         <saber-link class="text-copy-primary" :to="post.permalink">{{ post.title }}</saber-link>
       </h2>
       <div class="text-copy-secondary mb-4">
-        <span>{{ formatDate(post.createdAt) }}</span>
+        <span>{{ formatMonth(post.dateStart) }}</span> - <span>{{ formatMonth(post.dateEnd) }}</span>
       </div>
 
       <div class="text-lg mb-4">
@@ -15,7 +15,7 @@
       </div>
 
       <div class="mb-8">
-        <saber-link class="uppercase" :to="post.permalink">Read more</saber-link>
+        <saber-link class="uppercase" :to="post.permalink">Altro</saber-link>
       </div>
     </div> <!-- end post -->
   </div>

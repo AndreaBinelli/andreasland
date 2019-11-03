@@ -2,14 +2,13 @@
   <base-layout :page="page">
     <div class="container-inner mx-auto my-16">
       <h2 class="text-4xl font-bold leading-tight">{{ page.title }}</h2>
-      <div class="text-xl text-gray-600 mb-4">{{ formatDate(page.createdAt) }}</div>
-
+      <div class="text-xl text-gray-600 mb-4">{{ formatMonth(page.dateStart) }} - {{ formatMonth(page.dateEnd) }}</div>
       <div class="markdown-body border-b border-blue-lighter mb-10 pb-4">
         <slot name="default" />
       </div>
 
       <div class="mb-8">
-        <saber-link to="/blog" class="font-bold uppercase">Back to Blog</saber-link>
+        <saber-link to="/blog" class="font-bold uppercase">Indietro</saber-link>
       </div>
     </div>
   </base-layout>
